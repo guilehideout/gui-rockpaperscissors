@@ -73,12 +73,6 @@ class MainMenuScreen(Screen):
     def stopApp(self, dt):
         App.get_running_app().stop()
 
-    def on_key_down(self, window, key, scancode, codepoint, modifiers):
-        if codepoint == ' ':
-            fileHandle = open("text.txt", 'w')
-            fileHandle.write('hi')
-
-
 class GameplayScreen(Screen):
 
     def __init__(self, **kwargs):
